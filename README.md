@@ -24,7 +24,7 @@ Výsledky hlasování pro okres Prostějov:
     1. argument: 'https://volby.cz/pls/ps2017nss/ps311?xjazyk=CZ&xkraj=12&xobec=506761&xvyber=7103'
     2. argument: vysledky_prostejov.csv
     
-##Spuštění programu:
+## Spuštění programu:
 
     Hlavni.py "https://volby.cz/pls/ps2017nss/ps311?xjazyk=CZ&xkraj=12&xobec=506761&xvyber=7103" vysledky_prostejov.csv
 
@@ -34,7 +34,7 @@ Výsledky hlasování pro okres Prostějov:
     Ukládám do souboru:vysledky_prostejov.csv
     Ukončuji election-scraper
 
-##Částečný výstup:
+## Částečný výstup:
 
     kod_obce,nazev_obce,pocet_volicu,pocet_obalek,pocet_platnych_hlasu,kandidujici_stran....
     506761,Alojzov,205,145,144,"['Občanská demokratická strana', 'Řád národa - Vlastenecká unie', 'CESTA ODPOVĚDNÉ SPOLEČNOSTI'......
