@@ -1,16 +1,17 @@
-Engeto-pa-3-projekt
+# Engeto-pa-3-projekt
 Třetí projekt na Python Akademii od Engeta
 
-Popis projektu
+## Popis projektu
 Tento projekt slouží k extrahovnání výsledků z parlametních voleb r. 2017. Odkaz k nahlédnutí zde.
 
-Instalace knihoven
+## Instalace knihoven
 Knihovny, které jsou použity v kódu jsou uložené v souboru requirement.txt. Pro instalaci doporučuji použít nové virtuální prostřefí a s nainstalovaným manažerem spustit následovně:
 
-$ pip3 --version                    #overim verzi manazeru
+    $ pip3 --version                    #overim verzi manazeru
 
-$ pip3 install -r requirements.txt  #nainstalujeme knihovny
-Spouštění projektu
+    $ pip3 install -r requirements.txt  #nainstalujeme knihovny
+    
+## Spouštění projektu
 Spouštění souboru elektion-scraper.py v rámci příkazového řádku požaduje dva povinné argumenty.
 
 python election-scraper "<odkaz-uzemniho-celku>" "<vysledny-soubor>"
