@@ -2,7 +2,7 @@
 Třetí projekt na Python Akademii od Engeta
 
 ## Popis projektu
-Tento projekt slouží k extrahovnání výsledků z parlametních voleb r. 2017. Odkaz k nahlédnutí [zde] (https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2101).
+Tento projekt slouží k extrahovnání výsledků z parlametních voleb r. 2017. Odkaz k nahlédnutí [zde](https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2101).
 
 ## Instalace knihoven
 Knihovny, které jsou použity v kódu jsou uložené v souboru requirement.txt. Pro instalaci doporučuji použít nové virtuální prostřefí a s nainstalovaným manažerem spustit následovně:
