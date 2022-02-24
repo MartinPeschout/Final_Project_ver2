@@ -14,23 +14,27 @@ Knihovny, které jsou použity v kódu jsou uložené v souboru requirement.txt.
 ## Spouštění projektu
 Spouštění souboru elektion-scraper.py v rámci příkazového řádku požaduje dva povinné argumenty.
 
-python election-scraper "<odkaz-uzemniho-celku>" "<vysledny-soubor>"
+       python election-scraper "<odkaz-uzemniho-celku>" "<vysledny-soubor>"
+       
 Následně se vám stáhnou výsledky jako soubor s příponou .csv.
 
-Ukázka projektu
+## Ukázka projektu
 Výsledky hlasování pro okres Prostějov:
 
-1. argument: 'https://volby.cz/pls/ps2017nss/ps311?xjazyk=CZ&xkraj=12&xobec=506761&xvyber=7103'
-2. argument: vysledky_prostejov.csv
-Spuštění programu:
+    1. argument: 'https://volby.cz/pls/ps2017nss/ps311?xjazyk=CZ&xkraj=12&xobec=506761&xvyber=7103'
+    2. argument: vysledky_prostejov.csv
+    
+##Spuštění programu:
 
-Hlavni.py "https://volby.cz/pls/ps2017nss/ps311?xjazyk=CZ&xkraj=12&xobec=506761&xvyber=7103" vysledky_prostejov.csv
-Průběh stahování:
+    Hlavni.py "https://volby.cz/pls/ps2017nss/ps311?xjazyk=CZ&xkraj=12&xobec=506761&xvyber=7103" vysledky_prostejov.csv
 
-Stahuji data z vybraného URL: https://volby.cz/pls/ps2017nss/ps311?xjazyk=CZ&xkraj=12&xobec=506761&xvyber=7103
-Ukládám do souboru:vysledky_prostejov.csv
-Ukončuji election-scraper
-Částečný výstup:
+## Průběh stahování:
 
-kod_obce,nazev_obce,pocet_volicu,pocet_obalek,pocet_platnych_hlasu,kandidujici_stran....
-506761,Alojzov,205,145,144,"['Občanská demokratická strana', 'Řád národa - Vlastenecká unie', 'CESTA ODPOVĚDNÉ SPOLEČNOSTI'......
+    Stahuji data z vybraného URL: https://volby.cz/pls/ps2017nss/ps311?xjazyk=CZ&xkraj=12&xobec=506761&xvyber=7103
+    Ukládám do souboru:vysledky_prostejov.csv
+    Ukončuji election-scraper
+
+##Částečný výstup:
+
+    kod_obce,nazev_obce,pocet_volicu,pocet_obalek,pocet_platnych_hlasu,kandidujici_stran....
+    506761,Alojzov,205,145,144,"['Občanská demokratická strana', 'Řád národa - Vlastenecká unie', 'CESTA ODPOVĚDNÉ SPOLEČNOSTI'......
