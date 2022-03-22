@@ -2,17 +2,17 @@
 from Help_Modul import *
 
 def hlavni() -> None:
-        print (f"Stahuji data z vybraného URL:{url}")
-        odpoved = vytahni_udaje(url)
-        obec = ziskej_kod_obce()
-        jmeno_obce = ziskej_obec()
-        volici_celkem = pocet_volicu()
-        pocet_obalek = vydane_obalky()
-        pocet_hlasu = platne_hlasy()
-        nazev_stran = ziskej_kandidujici_strany()
-        print(f"Ukládám do souboru:{soubor}")
-        vytvor_csv = uloz_csv()
-        print("Ukončuji election-scraper")
+    print(f"Stahuji data z vybraného URL:{url}")
+
+    odpoved = vytahni_udaje(url)
+    ziskej_adr = ziskej_pravou_adr(odpoved)
+    web_adresa = prava_adresa(ziskej_adr)
+    platne_hlasy_strany = strany_platne_hlasy(web_adresa)
+
+    print(f"Ukládám do souboru:{soubor}")
+    uloz_csv(list(platne_hlasy_strany))
+
+    print("Ukončuji election-scraper")
 
 if __name__ == "__main__":
     hlavni()
