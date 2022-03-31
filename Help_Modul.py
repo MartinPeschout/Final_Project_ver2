@@ -47,7 +47,7 @@ def strany_platne_hlasy(adresa):
     for k in adresa:
         polevka = vytahni_udaje(k)
         cislo_obec = (([a['href'] for a in polevka.find_all('a', href=True)][6]).split("&")[2]).strip("XOBEC=")
-        obec = ((polevka.find_all("h3")[2].get_text()).strip()).split(" ")
+        obec = (((polevka.find_all('h3', {"class": 'skryto'}))[0].get_text()).split('–')[1]).strip('Obec ')
         PH = polevka.findAll("td")[3].text
         VO = polevka.findAll("td")[4].text
         PLH = polevka.findAll("td")[7].text
@@ -64,7 +64,7 @@ def strany_platne_hlasy(adresa):
                 ph = pocty_hlasu[k].get_text()
                 pocty.append(ph)
         dict_from_list = dict(zip(strany, pocty))
-        mezikus = {"Číslo obce": cislo_obec, "Obec": obec[1], "Voliči v seznamu": PH, "Vydané obálky": VO,
+        mezikus = {"Číslo obce": cislo_obec, "Obec": obec, "Voliči v seznamu": PH, "Vydané obálky": VO,
                    "Platné hlasy": PLH, **dict_from_list}
         soubor_obce.append(mezikus)
     return soubor_obce
